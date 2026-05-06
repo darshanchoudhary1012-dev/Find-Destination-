@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bansal College - Bus Route Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>SUSHILA DEVI BANSAL COLLEGE,INDORE (MP)</h1>
+        <h1 style="color: red; text-align: center; margin-top: 10px; font-size: 1.5rem;">Note : Bus routes change
+            daily.Please search your destination every day<br>
+            नोट: बस मार्ग रोज़ बदलते हैं। कृपया अपना गंतव्य रोज़ खोजें।
+        </h1>
+        <p style="margin-top:5px; color:#666;">Indore - Transport Department</p>
+    </header>
+
+    <div class="hero">
+        <img src=" Transportation.png" alt=" Sushila Devi Bansal College bus">
+    </div>
+
+    <div class="container">
+        <div class="search-area">
+            <h3>Enter Your destination </h3>
+            <div class="search-box">
+                <input type="text" id="stopInput" placeholder="e.g. Station, Rajwada, Vijay Nagar...">
+                <button onclick="searchBuses()">Search Now</button>
+            </div>
+            <p id="errorMsg" class="error">No buses found for this stop. Please try another name.</p>
+        </div>
+
+        <table id="busTable">
+            <thead>
+                <tr>
+                    <th>Bus No.</th>
+                    <th>Stops in Route</th>
+                    <th>Final Destination</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody"></tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
