@@ -13,6 +13,10 @@ const busDatabase = [
         no: "Bus 08",
         stops: ["Bhawarkua", "Tower Square", "Sapna Sangeeta", "College"],
         dest: "Bansal College Campus"
+    },
+    { 
+        no:"Bus 46",
+        stops: [ "Hawa Bangla","Cat Road ","Rau Rangwasa","Ranjit Hanuman","60 Fit Footi kothi"],
     }
 ];
 
